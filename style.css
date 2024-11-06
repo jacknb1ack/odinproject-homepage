@@ -70,7 +70,7 @@ h6 {
 /* global */
 body {
   font-family: "Roboto", sans-serif;
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -79,11 +79,10 @@ body {
 
 .main-content {
   max-width: 1600px;
-  width: 80vw;
+  padding: 0 4rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  gap: 2rem;
 }
 
 /* hero section */
@@ -94,12 +93,12 @@ body {
 }
 .top-square {
   background-color: #3d65c2;
-  width: 100vw;
+  width: 100%;
   height: 20vh;
 }
 
 .top-triangle {
-  width: 100vw;
+  width: 100%;
   height: 0;
   border-top: 250px solid #3d65c2;
   border-right: 100vw solid transparent;
@@ -142,7 +141,7 @@ body {
   gap: 0.5rem;
   box-shadow: 3px 3px 15px -5px rgba(197, 197, 197, 0.651);
   z-index: -1;
-  width: 50%;
+  max-width: 50%;
 }
 
 .about-icon {
@@ -150,4 +149,50 @@ body {
   justify-content: flex-end;
   gap: 2rem;
   font-size: 1.75rem;
+}
+
+/* portofolio section */
+#portofolio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.porto-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.porto-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.porto-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 3px;
+  box-shadow: 2px 3px 15px 1px rgba(129, 129, 129, 0.651);
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.project-icon {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+  font-size: 1.2rem;
+}
+
+.project-desc {
+  padding: 2rem;
 }
