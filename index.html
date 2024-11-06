@@ -128,7 +128,11 @@
           </div>
         </div>
         <div class="footer-image">
-          <img src="images/footer-image.jpg" alt="footer image" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="images/footer-image.jpg" />
+            <source media="(min-width: 600px)" srcset="images/footer-image-crop.jpg" />
+            <img src="images/footer-image-crop.jpg" alt="footer image" />
+          </picture>
         </div>
       </div>
     </footer>
